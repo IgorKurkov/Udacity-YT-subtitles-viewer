@@ -1,17 +1,13 @@
-
 var body = document.getElementsByTagName('body');
 
 var div = document.createElement('div');
     div.id = "yt-txt-popup";
     div.onmouseover = function(){ this.style.opacity = "1"; }
     div.onmouseout = function(){ this.style.opacity = "0.7"; }
-document.body.appendChild(div);
+    document.body.appendChild(div);
 
 var wrapper = document.createElement('div');
     wrapper.id = "yt-txt-button-wrapper";
-    // wrapper.style.position = "absolute";
-    // wrapper.style.right = "0px";
-    // wrapper.style.top = "10px";
     div.appendChild(wrapper);
 
 var text = document.createElement('div');
@@ -20,17 +16,11 @@ var text = document.createElement('div');
 
 var collapseButton = createButton("collapse-txt", "COLLAPSE");
     collapseButton.onclick = function(){ 
-      if (!collapseButton.classList.contains ("collapse")) {
-        collapseButton.classList.toggle ("collapse");
-        div.style.height = "14px"; 
-        div.style.padding = "10px";
-        div.style.overflowY = "none";
+      if (!div.classList.contains ("collapse")) {
+        div.classList.toggle ("collapse");
         text.style.display = "none";
       } else {
-        collapseButton.classList.toggle ("collapse");
-        div.style.height = "inherit"; 
-        div.style.padding = "30px 10px";
-        div.style.overflowY = "auto";
+        div.classList.toggle ("collapse");
         text.style.display = "block";
       }
     }
