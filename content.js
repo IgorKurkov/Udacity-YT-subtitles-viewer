@@ -74,6 +74,12 @@ function createButton(buttonId, buttonText){
 
 //parse link of youtube video
 //iframe .embed-responsive-item src
+function youtube_parser(url){
+  var regExp = /^.*((youtube.com\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+  var match = url.match(regExp);
+  return (match&&match[7].length==11)? match[7] : false;
+}
+
 function ready(){
   var youtubeSrc = document.getElementsByClassName("embed-responsive-item")[0];
 
@@ -83,22 +89,16 @@ function ready(){
     var youtubeUrl = document.getElementsByClassName("embed-responsive-item")[0].src;
   }
 
-  function youtube_parser(url){
-    var regExp = /^.*((youtube.com\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
-    var match = url.match(regExp);
-    return (match&&match[7].length==11)? match[7] : false;
-  }
   var youtubeId = youtube_parser(youtubeUrl);
 
   fetch('https://www.youtube.com/api/timedtext?lang=en&v='+youtubeId) //+youtubeId)
-  .then(function(response) {
-    
+  .then(function(response) {   
       return response.text();
-  })
+    })
   .then(function(string) {
-  string = string.replace(/<(?:.|\n)*?>/gm, '');
-  string = string.replace(/\[(?:.|\n)*?\]/gm, '');
-  text.innerHTML = string;
+    string = string.replace(/<(?:.|\n)*?>/gm, '');
+    string = string.replace(/\[(?:.|\n)*?\]/gm, '');
+    text.innerHTML = string;
   });
 }
 
