@@ -1,4 +1,4 @@
-var body = document.getElementsByTagName('body');
+// var body = document.getElementsByTagName('body');
 
 var div = document.createElement('div');
     div.id = "yt-txt-popup";

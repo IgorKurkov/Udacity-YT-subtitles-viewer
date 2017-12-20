@@ -2,7 +2,7 @@
   max-height: 70vh;
   position: fixed;
   min-width: 200px;
-  max-width: 30vw;
+  width: 30vw;
   right: 10px;
   top: 10px;
   background-color: #CCCCCC;
