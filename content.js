@@ -3,20 +3,6 @@ var body = document.getElementsByTagName('body');
 
 var div = document.createElement('div');
     div.id = "yt-txt-popup";
-    div.style.position = "fixed";
-    div.style.width = "30vw";
-    // div.style.height = "70vh";
-    div.style.right = "10px";
-    div.style.top = "10px";
-    div.style.backgroundColor = "#CCCCCC";
-    div.style.opacity = "0.7";
-    div.style.zIndex = "9998";
-    div.style.borderRadius = "3px";
-    div.style.border = "1px solid #D1D1D1";
-    div.style.padding = "30px 10px";
-    div.style.transition = "0.5s ease";
-    div.style.overflowY = "auto";
-    div.style.display = "none";
     div.onmouseover = function(){ this.style.opacity = "1"; }
     div.onmouseout = function(){ this.style.opacity = "0.7"; }
 document.body.appendChild(div);
