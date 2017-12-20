@@ -1,7 +1,8 @@
 #yt-txt-popup {
   max-height: 70vh;
   position: fixed;
-  width: 30vw;
+  min-width: 200px;
+  max-width: 30vw;
   right: 10px;
   top: 10px;
   background-color: #CCCCCC;
@@ -22,12 +23,11 @@
 
 #yt-txt-button-wrapper {
   position: absolute;
-  min-width: 200px;
   right: 0px;
   top: 10px;
 }
 
-.yt-txt-button {
+.yt-txt-buttons {
   padding: 7px 10px;
   margin: 0 5px;
   border-radius: 3px;
@@ -35,7 +35,7 @@
   color: #FFF;
   text-decoration: none;
 }
-.yt-txt-button:hover {
+.yt-txt-buttons:hover {
   background: rgb(2, 103, 131);
 }
 

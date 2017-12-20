@@ -36,15 +36,9 @@ function createButton(buttonId, buttonText){
   var buttonElement = document.createElement('a');
       buttonElement.setAttribute('href', '#');
       buttonElement.id = buttonId;
-      buttonElement.classList.add("yt-txt-button");
+      buttonElement.classList.add("yt-txt-buttons");
       t = document.createTextNode(buttonText);  
       buttonElement.appendChild(t);
-      // buttonElement.style.padding = "7px 10px";
-      // buttonElement.style.margin = "0 5px";
-      // buttonElement.style.borderRadius = "3px";
-      // buttonElement.style.background = "#02B3E4";
-
-      // buttonElement.style.color = "#FFF";
   return buttonElement;
 }
 
