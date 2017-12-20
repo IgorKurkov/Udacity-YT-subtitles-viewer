@@ -26,6 +26,19 @@
   right: 0px;
   top: 10px;
 }
+
+.yt-txt-button {
+  padding: 7px 10px;
+  margin: 0 5px;
+  border-radius: 3px;
+  background: #02B3E4;
+  color: #FFF;
+  text-decoration: none;
+}
+.yt-txt-button:hover {
+  background: rgb(2, 103, 131);
+}
+
 #txt {
   padding-top:15px;
 }
