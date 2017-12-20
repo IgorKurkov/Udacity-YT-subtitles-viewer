@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function sendTextToDiv() { //text
     chrome.tabs.executeScript({
-       code: 'ready(); var main = document.getElementById("txt-popup"); main.style.display = "block"; ' //document.getElementById("txt").innerHTML = "'+text+'"; 
+       code: 'parseSubtitlesToPane(); ' //document.getElementById("txt").innerHTML = "'+text+'"; 
     }); 
   }
  

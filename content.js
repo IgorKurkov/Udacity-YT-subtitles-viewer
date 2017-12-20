@@ -80,7 +80,8 @@ function youtube_parser(url){
   return (match&&match[7].length==11)? match[7] : false;
 }
 
-function ready(){
+function parseSubtitlesToPane(){
+  div.style.display = "block"; 
   var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
   if(youtubeIframe == undefined) {
     text.innerHTML = "It is not udasity or another site with youtube video";
