@@ -23,11 +23,10 @@ function fontSizeChanging(boolean){
 var biggerButton = createButton("bigger-txt", "a-A");    
     biggerButton.onclick = function(){ fontSizeChanging(true) }
     wrapper.appendChild(biggerButton);
+
 var smallerButton = createButton("smaller-txt", "A-a");    
     smallerButton.onclick = function(){ fontSizeChanging(false)  }
     wrapper.appendChild(smallerButton);
-
-
 
 var collapseButton = createButton("collapse-txt", "COLLAPSE");
     collapseButton.onclick = function(){ 
