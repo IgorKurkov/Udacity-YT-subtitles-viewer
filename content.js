@@ -2,10 +2,10 @@
 var body = document.getElementsByTagName('body');
 
 var div = document.createElement('div');
-    div.id = "txt-popup";
+    div.id = "yt-txt-popup";
     div.style.position = "fixed";
     div.style.width = "30vw";
-    div.style.height = "70vh";
+    // div.style.height = "70vh";
     div.style.right = "10px";
     div.style.top = "10px";
     div.style.backgroundColor = "#CCCCCC";
@@ -42,7 +42,7 @@ var collapseButton = createButton("collapse-txt", "COLLAPSE");
         text.style.display = "none";
       } else {
         collapseButton.classList.toggle ("collapse");
-        div.style.height = "70vh"; 
+        div.style.height = "inherit"; 
         div.style.padding = "30px 10px";
         div.style.overflowY = "auto";
         text.style.display = "block";
@@ -71,8 +71,6 @@ function createButton(buttonId, buttonText){
   return buttonElement;
 }
 
-
-//parse link of youtube video
 //iframe .embed-responsive-item src
 function youtube_parser(url){
   var regExp = /^.*((youtube.com\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;

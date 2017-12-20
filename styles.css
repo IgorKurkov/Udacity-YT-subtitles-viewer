@@ -1,9 +1,14 @@
+#yt-txt-popup {
+  /* min-height: 100px; */
+  max-height: 70vh;
+}
 #txt {
   padding-top:15px;
 }
 
 #yt-txt-error {
-  font-size: 20px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .btn {
