@@ -14,6 +14,12 @@
   overflow-y: auto;
   display: none;
 }
+#yt-txt-button-wrapper {
+  position: absolute;
+  min-width: 200px;
+  right: 0px;
+  top: 10px;
+}
 #txt {
   padding-top:15px;
 }

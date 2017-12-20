@@ -8,10 +8,10 @@ var div = document.createElement('div');
 document.body.appendChild(div);
 
 var wrapper = document.createElement('div');
-    wrapper.id = "txt-wrapper";
-    wrapper.style.position = "absolute";
-    wrapper.style.right = "0px";
-    wrapper.style.top = "10px";
+    wrapper.id = "yt-txt-button-wrapper";
+    // wrapper.style.position = "absolute";
+    // wrapper.style.right = "0px";
+    // wrapper.style.top = "10px";
     div.appendChild(wrapper);
 
 var text = document.createElement('div');
