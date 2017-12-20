@@ -1,4 +1,3 @@
-// var body = document.getElementsByTagName('body');
 
 var div = document.createElement('div');
     div.id = "yt-txt-popup";
@@ -13,6 +12,22 @@ var wrapper = document.createElement('div');
 var text = document.createElement('div');
     text.id = "txt";
     div.appendChild(text);
+
+function fontSizeChanging(boolean){
+  var style = window.getComputedStyle(text, null).getPropertyValue('font-size');
+  var curr = parseInt(style);
+  var newSize = boolean ? ++curr : --curr;
+  text.style.fontSize = newSize+"px";
+}
+
+var biggerButton = createButton("bigger-txt", "a-A");    
+    biggerButton.onclick = function(){ fontSizeChanging(true) }
+    wrapper.appendChild(biggerButton);
+var smallerButton = createButton("smaller-txt", "A-a");    
+    smallerButton.onclick = function(){ fontSizeChanging(false)  }
+    wrapper.appendChild(smallerButton);
+
+
 
 var collapseButton = createButton("collapse-txt", "COLLAPSE");
     collapseButton.onclick = function(){ 
@@ -53,7 +68,7 @@ function parseSubtitlesToPane(){
   div.style.display = "block"; 
   var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
   if(youtubeIframe == undefined) {
-    text.innerHTML = '<span id="yt-txt-error">It is not udasity or another site with youtube video</span>';
+    text.innerHTML = 'It is not udasity or another site with youtube video';
     return;
   } else {
     var youtubeUrl = youtubeIframe.src;

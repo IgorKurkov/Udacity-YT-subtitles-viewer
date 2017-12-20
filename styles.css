@@ -16,7 +16,7 @@
   display: none;
 }
 #yt-txt-popup.collapse {
-  height: 14px; 
+  height: 18px; 
   padding: 10px;
   overflow-y: none;
 }
@@ -25,11 +25,12 @@
   position: absolute;
   right: 0px;
   top: 10px;
+  padding: 0 5px;
 }
 
 .yt-txt-buttons {
   padding: 7px 10px;
-  margin: 0 5px;
+  margin-left: 5px;
   border-radius: 3px;
   background: #02B3E4;
   color: #FFF;
@@ -43,10 +44,7 @@
   padding-top:15px;
 }
 
-#yt-txt-error {
-  font-size: 15px;
-  text-align: center;
-}
+
 
 .btn {
   background: #3498db;
