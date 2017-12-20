@@ -81,14 +81,13 @@ function youtube_parser(url){
 }
 
 function ready(){
-  var youtubeSrc = document.getElementsByClassName("embed-responsive-item")[0];
-
-  if(youtubeSrc == undefined) {
+  var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
+  if(youtubeIframe == undefined) {
     text.innerHTML = "It is not udasity or another site with youtube video";
+    return;
   } else {
-    var youtubeUrl = document.getElementsByClassName("embed-responsive-item")[0].src;
+    var youtubeUrl = youtubeIframe.src;
   }
-
   var youtubeId = youtube_parser(youtubeUrl);
 
   fetch('https://www.youtube.com/api/timedtext?lang=en&v='+youtubeId) //+youtubeId)
@@ -102,9 +101,6 @@ function ready(){
   });
 }
 
-
-
-//document.addEventListener("DOMContentLoaded", ready, false);
 
 
 
