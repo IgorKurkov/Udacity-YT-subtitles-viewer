@@ -12,7 +12,7 @@
    "activeTab"
    ],
    "content_scripts": [{
-    //"css": ["styles.css"],
+    "css": ["styles.css"],
     "js": ["content.js"],
     "matches": ["<all_urls>"]
   }]

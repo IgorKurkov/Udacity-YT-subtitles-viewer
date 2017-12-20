@@ -84,7 +84,7 @@ function parseSubtitlesToPane(){
   div.style.display = "block"; 
   var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
   if(youtubeIframe == undefined) {
-    text.innerHTML = "It is not udasity or another site with youtube video";
+    text.innerHTML = '<span id="yt-txt-error">It is not udasity or another site with youtube video</span>';
     return;
   } else {
     var youtubeUrl = youtubeIframe.src;
