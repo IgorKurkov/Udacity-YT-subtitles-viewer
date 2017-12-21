@@ -7,5 +7,5 @@ Extention for chrome able to views subtitles of current youtube video in Udacity
 It's really useful for learning new technical words and see all the subtitles in one popup sidebar near the video. 
 Most efficient with **[Lingualeo addon](https://chrome.google.com/webstore/detail/lingualeo-english-transla/nglbhlefjhcjockellmeclkcijildjhi?hl=ru)**
 
-<center>![How to](gif/how-to.gif)</center>
+![How to](gif/how-to.gif)
 
