@@ -63,6 +63,15 @@ function youtube_parser(url){
   return (match&&match[7].length==11)? match[7] : false;
 }
 
+function convertSpecialChars(str) {
+  str = str.replace(/&amp;/g, "&");
+  str = str.replace(/&gt;/g, ">");
+  str = str.replace(/&lt;/g, "<");
+  str = str.replace(/&quot;/g, '"');
+  str = str.replace("&#039;", "'");
+  return str;
+}
+
 function parseSubtitlesToPane(){
   div.style.display = "block"; 
   var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
@@ -81,6 +90,7 @@ function parseSubtitlesToPane(){
   .then(function(string) {
     string = string.replace(/<(?:.|\n)*?>/gm, '');
     string = string.replace(/\[(?:.|\n)*?\]/gm, '');
+    string = convertSpecialChars(string);
     text.innerHTML = string;
   });
 }
