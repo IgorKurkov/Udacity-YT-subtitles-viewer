@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "YT subtitles viewer",
-  "description": "Views subtitles of current youtube video in Udacity.com. Useful for learning english new words. Most efficient with 'lingualeo addon'.",
+  "name": "Udacity YT subtitles viewer",
+  "description": "Views subtitles of current YTube video in Udacity.com. Useful for learning english new words. Most efficient with 'lingualeo addon'.",
   "version": "1.0",
   "browser_action": {
    "default_icon": "icon.png",
