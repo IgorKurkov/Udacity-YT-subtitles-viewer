@@ -6,7 +6,7 @@
   right: 10px;
   top: 10px;
   background-color: #CCCCCC;
-  opacity: 0.7;
+  opacity: 0.5;
   z-index: 9998;
   border-radius: 3px;
   border: 1px solid #D1D1D1;
@@ -45,6 +45,7 @@
 
 #txt {
   padding-top:15px;
+  color: black;
 }
 
 #credentials {
