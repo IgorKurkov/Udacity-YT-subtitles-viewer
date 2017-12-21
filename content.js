@@ -76,7 +76,7 @@ function parseSubtitlesToPane(){
   div.style.display = "block"; 
   var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
   if(youtubeIframe == undefined) {
-    text.innerHTML = 'It is not udasity or another site with youtube video';
+    text.innerHTML = 'It is not Udacity.com so it will not work with another site today';
     return;
   } else {
     var youtubeUrl = youtubeIframe.src;
