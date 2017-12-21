@@ -46,7 +46,7 @@
 
 
 
-.btn {
+#checkPage {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -63,7 +63,7 @@
   text-decoration: none;
 }
 
-.btn:hover {
+#checkPage:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
