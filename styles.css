@@ -43,7 +43,11 @@
 #txt {
   padding-top:15px;
 }
-
+#credentials {
+  /* text-align: right; */
+  font-size: 10px;
+  padding-bottom: 15px;
+}
 
 
 #checkPage {

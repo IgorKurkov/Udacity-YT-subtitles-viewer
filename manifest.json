@@ -2,12 +2,13 @@
   "manifest_version": 2,
 
   "name": "YT subtitles viewer",
-  "description": "This extension views subtitles of current youtube video. Really useful for learning english (or another language), new words. Most efficient with lingualeo addon (popup translation). (today english subs viewed only)",
+  "description": "Views subtitles of current youtube video. Useful for learning english (only en) new words. Most efficient with 'lingualeo addon' (translator).",
   "version": "1.0",
   "browser_action": {
    "default_icon": "icon.png",
    "default_popup": "popup.html"
   },
+  "homepage_url": "https://github.com/IgorKurkov",
   "permissions": [
    "activeTab"
    ],
