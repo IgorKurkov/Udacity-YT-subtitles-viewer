@@ -13,19 +13,19 @@ var text = document.createElement('div');
     text.id = "txt";
     div.appendChild(text);
 
-function fontSizeChanging(boolean){
+function fontSizeChanging(pixelValue){
   var style = window.getComputedStyle(text, null).getPropertyValue('font-size');
   var curr = parseInt(style);
-  var newSize = boolean ? ++curr : --curr;
+  var newSize = pixelValue > 0 ? ++curr : --curr;
   text.style.fontSize = newSize+"px";
 }
 
-var biggerButton = createButton("bigger-txt", "a-A");    
-    biggerButton.onclick = function(){ fontSizeChanging(true) }
+var biggerButton = createButton("bigger-txt", "A+");    
+    biggerButton.onclick = function(){ fontSizeChanging(+2) }
     wrapper.appendChild(biggerButton);
 
-var smallerButton = createButton("smaller-txt", "A-a");    
-    smallerButton.onclick = function(){ fontSizeChanging(false)  }
+var smallerButton = createButton("smaller-txt", "A-");    
+    smallerButton.onclick = function(){ fontSizeChanging(-2)  }
     wrapper.appendChild(smallerButton);
 
 var collapseButton = createButton("collapse-txt", "COLLAPSE");
