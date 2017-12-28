@@ -2,7 +2,7 @@ var body = document.querySelector("body");
 var div = document.createElement('div');
     div.id = "yt-txt-popup";
     div.onmouseover = function(){ this.style.opacity = "1"; }
-    div.onmouseout = function(){ this.style.opacity = "0.5"; }
+    div.onmouseout = function(){ this.style.opacity = "0.3"; }
     body.appendChild(div);
 
 var wrapper = document.createElement('div');

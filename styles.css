@@ -1,17 +1,17 @@
 /* block inserted to page*/
 #yt-txt-popup {
-  max-height: 70vh;
+  /* max-height: 50vh; */
   position: fixed;
   min-width: 270px;
   width: 30vw;
   right: 10px;
   top: 10px;
   background-color: #CCCCCC;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 9998;
   border-radius: 3px;
   border: 1px solid #D1D1D1;
-  padding: 30px 5px 25px 5px;
+  padding: 30px 5px 5px 5px;
   transition: 0.5s ease;
   display: none;
   font-size: 14px;
@@ -19,7 +19,7 @@
 }
 #yt-txt-popup.collapse {
   height: 18px; 
-  padding: 5px;
+  padding: 10px 5px;
   overflow-y: none;
 }
 
@@ -50,7 +50,7 @@
   margin-top: 10px;
   color: black;
   overflow-y: auto;
-  max-height: 70vh;
+  max-height: 50vh;
   background-color: rgb(235, 235, 235);
 }
 
