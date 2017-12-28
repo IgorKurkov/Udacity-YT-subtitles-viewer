@@ -92,6 +92,7 @@ function parseSubtitlesToPane(){
     string = string.replace(/<(?:.|\n)*?>/gm, '');
     string = string.replace(/\[(?:.|\n)*?\]/gm, '');
     string = convertSpecialChars(string);
+    string = string.replace(/\./gm, '.<br>');
     text.innerHTML = string;
   });
 }
