@@ -1,3 +1,4 @@
+/* block inserted to page*/
 #yt-txt-popup {
   max-height: 70vh;
   position: fixed;
@@ -12,7 +13,6 @@
   border: 1px solid #D1D1D1;
   padding: 30px 3px 25px 3px;
   transition: 0.5s ease;
-  /* overflow-y: auto; */
   display: none;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -51,17 +51,9 @@
   color: black;
   overflow-y: auto;
   max-height: 70vh;
-  min-width: 270px;
   background-color: rgb(235, 235, 235);
 }
 
-
-#credentials {
-  /* text-align: right; */
-  font-size: 10px;
-  padding-bottom: 15px;
-}
-/* Custom scrollbar */
 #txt::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   background-color: #F5F5F5;
@@ -74,6 +66,13 @@
 #txt::-webkit-scrollbar-thumb {
   background-color: #6b6b6b;
   border: 2px solid #636363;
+}
+
+
+ /* popup html near icon  */
+#credentials {
+  font-size: 10px;
+  padding-bottom: 15px;
 }
 
 #checkPage {
@@ -105,6 +104,8 @@
 #checkPage:active {
   background: #164864;
 }
+
+
 /* for gTranslate bubble that it will appear below all other blocks */
 .jfk-bubble {
 z-index: 9999 !important;
