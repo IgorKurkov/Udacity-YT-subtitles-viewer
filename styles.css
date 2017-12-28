@@ -11,7 +11,7 @@
   z-index: 9998;
   border-radius: 3px;
   border: 1px solid #D1D1D1;
-  padding: 30px 3px 25px 3px;
+  padding: 30px 5px 25px 5px;
   transition: 0.5s ease;
   display: none;
   font-size: 14px;
@@ -19,7 +19,7 @@
 }
 #yt-txt-popup.collapse {
   height: 18px; 
-  padding: 10px;
+  padding: 5px;
   overflow-y: none;
 }
 
@@ -45,8 +45,8 @@
 }
 
 #txt {
-  padding: 3px;
-  border-radius: 3px;
+  padding: 5px;
+  border-radius: 5px;
   margin-top: 10px;
   color: black;
   overflow-y: auto;
