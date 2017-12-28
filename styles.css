@@ -84,3 +84,7 @@
 #checkPage:active {
   background: #164864;
 }
+/* for gTranslate bubble that it will appear below all other blocks */
+.jfk-bubble {
+z-index: 9999 !important;
+}

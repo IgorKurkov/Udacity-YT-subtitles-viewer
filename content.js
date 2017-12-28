@@ -73,7 +73,7 @@ function convertSpecialChars(str) {
 }
 
 function parseSubtitlesToPane(){
-  div.style.display = "block"; 
+  div.style.display = "block"; //Make Div VISIBLE
   var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
   if(youtubeIframe == undefined) {
     text.innerHTML = 'It is not Udacity.com so it will not work with another site today';
