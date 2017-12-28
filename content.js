@@ -73,6 +73,7 @@ function convertSpecialChars(str) {
 }
 
 function parseSubtitlesToPane(){
+  if(!body) { console.log("not loaded already"); return; }
   div.style.display = "block"; //Make Div VISIBLE
   var youtubeIframe = document.getElementsByClassName("embed-responsive-item")[0];
   if(youtubeIframe == undefined) {

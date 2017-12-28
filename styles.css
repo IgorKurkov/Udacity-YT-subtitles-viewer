@@ -10,7 +10,7 @@
   z-index: 9998;
   border-radius: 3px;
   border: 1px solid #D1D1D1;
-  padding: 30px 3px 30px 10px;
+  padding: 30px 3px 25px 3px;
   transition: 0.5s ease;
   /* overflow-y: auto; */
   display: none;
@@ -45,14 +45,16 @@
 }
 
 #txt {
+  padding: 3px;
   border-radius: 3px;
-  margin-top: 17px;
+  margin-top: 10px;
   color: black;
   overflow-y: auto;
   max-height: 70vh;
   min-width: 270px;
   background-color: rgb(235, 235, 235);
 }
+
 
 #credentials {
   /* text-align: right; */
@@ -94,3 +96,7 @@
 .jfk-bubble {
 z-index: 9999 !important;
 }
+
+
+
+ 
